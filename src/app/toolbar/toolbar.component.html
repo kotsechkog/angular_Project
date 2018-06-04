@@ -1,0 +1,27 @@
+<mat-toolbar>
+  <button mat-icon-button (click)="drawer.toggle()">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <a class="logo" href="#">
+    <div class="logo__circles"></div>
+    <div class="logo__name">moderno</div>
+  </a>
+  <div class="search">
+    <mat-icon class="search-icon">search</mat-icon>
+    <input type="text" placeholder="Search for anything">
+  </div>
+  <button mat-icon-button class="notifications">
+    <mat-icon>notifications_none</mat-icon>
+    <div class="notifications-label">2</div>
+  </button>
+
+  <mat-menu #appMenu="matMenu">
+    <button mat-menu-item>Settings</button>
+    <button mat-menu-item>Help</button>
+  </mat-menu>
+
+  <button class="user" mat-button [matMenuTriggerFor]="appMenu">
+    <img class="avatar" src="./assets/images/user.jpg" alt="avatar">
+    <span>Hi, Michael</span>
+  </button>
+</mat-toolbar>

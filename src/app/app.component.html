@@ -1,0 +1,15 @@
+<header>
+  <app-toolbar [drawer]="drawer"></app-toolbar>
+</header>
+
+<mat-drawer-container autosize>
+  <mat-drawer #drawer mode="side">
+    <app-drawer></app-drawer>
+  </mat-drawer>
+
+  <main>
+    <router-outlet></router-outlet>
+  </main>
+
+</mat-drawer-container>
+

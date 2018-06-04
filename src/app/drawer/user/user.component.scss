@@ -1,0 +1,66 @@
+.user {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  &-avatar {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 50%;
+    }
+  }
+
+  &-label {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #f3065a;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    z-index: 5;
+    color: #fff;
+    text-align: center;
+    font-size: 10px;
+    line-height: 12px;
+    box-shadow: 0 0 0 3px rgba(#f3065a, .3);
+  }
+
+  &-name {
+    font-size: 14px;
+    color: #292928;
+  }
+
+  &-role {
+    font-size: 12px;
+    color: #80807d;
+  }
+
+  .icons {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    .icon {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin: 2px;
+
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+    }
+  }
+}
